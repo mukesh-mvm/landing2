@@ -1,11 +1,11 @@
 // Show the form
 document.getElementById("enquiryBtn").addEventListener("click", () => {
-    document.getElementById("contactForm1").classList.add("show");
+    document.getElementById("contactForm5").classList.add("show");
   });
   
   // Hide the form
   document.getElementById("closeForm").addEventListener("click", () => {
-    document.getElementById("contactForm1").classList.remove("show");
+    document.getElementById("contactForm5").classList.remove("show");
   });
 
 

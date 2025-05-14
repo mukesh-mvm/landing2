@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
 
@@ -21,12 +23,12 @@
     <div class="nav-links" id="navLinks">
       <a href="#overview">Home</a>
       <a href="#overview">OVERVIEW</a>
-      <a href="#overview">CONFIGRATION</a>
+      <a href="#CONFIGRATION">CONFIGRATION</a>
       <a href="#amenities">AMENITIES</a>
-      <a href="#gallery">GALLERY</a>
-      <a href="#location">LOCATION</a>
-      <a href="#pricing">PRINCING</a>
-      <a href="#floorplans">ABOUT US</a>
+      <a href="#GALLERY">GALLERY</a>
+      <a href="#LOCATION">LOCATION</a>
+      <a href="#FLOOR">FLOOR PLAN</a>
+      <a href="#ABOUTUS">ABOUT US</a>
       
 
       
@@ -95,7 +97,7 @@
 
 
    <!-- trilion life section -->
-  <section>
+  <section id="overview">
       <div class="container-website">
           <div class="trillion-container">
               <div class="trillion-left-box">
@@ -116,7 +118,7 @@
                     <button class="nav-btn next" onclick="nextSlide()">❯</button>
                   </div>
               </div>
-              <div class="trillio-right-box">
+              <div class="trillio-right-box" >
                   <div class="trillio-right-box-form">
                       <h4 class="heading-4">Booking Open</h4>
                       <h3 class="heading-2">The Thrillion Life</h3>
@@ -145,7 +147,7 @@
 
 
    <!-- helight section -->
-   <section  class="helight-section-main">
+   <section  class="helight-section-main" id="CONFIGRATION">
 
     <h3 class="sub-heading">PROJECT HIGHLIGHTS</h3>
     <div class="highlight-section">
@@ -154,33 +156,33 @@
             
             <div class="icons-grid">
               <div class="icon-box">
-                <div class="icon-circle">🧘‍♂️</div>
+                <div class="icon-circle"><i class="fa-solid fa-person-walking"></i></div>
                 <p>24*7 Gymnasium</p>
               </div>
               <div class="icon-box">
-                <div class="icon-circle">🌳</div>
+                <div class="icon-circle"><i class="fa-solid fa-leaf"></i></div>
                 <p>Overlooking central greens</p>
               </div>
               <div class="icon-box">
-                <div class="icon-circle">🎯</div>
+                <div class="icon-circle"><i class="fa-solid fa-leaf"></i></div>
                 <p>Club zones for all age groups</p>
               </div>
               <div class="icon-box">
-                <div class="icon-circle">🏢</div>
+                <div class="icon-circle"><i class="fa-solid fa-house-signal"></i></div>
                 <p>Facade design by UHA, London</p>
               </div>
               <div class="icon-box">
-                <div class="icon-circle">🏰</div>
+                <div class="icon-circle"><i class="fa-brands fa-studiovinari"></i></div>
                 <p>Designed by Element Studio, Singapore</p>
               </div>
               <div class="icon-box">
-                <div class="icon-circle">🏠</div>
+                <div class="icon-circle"><i class="fa-solid fa-shuttle-space"></i></div>
                 <p>24*7 Co-working space in Delhi-NCR</p>
               </div>
             </div>
           </div>
         
-          <div class="highlight-form">
+          <!-- <div class="highlight-form">
             <div class="form-header">REGISTER YOUR INTEREST</div>
             <input type="text" placeholder="First Name" required>
             <input type="email" placeholder="Email" required>
@@ -188,7 +190,29 @@
             <button type="submit">
               <span>✈</span> SUBMIT
             </button>
-          </div>
+          </div> -->
+
+
+
+           <div class="form-container3">
+                             <div class="form-header">REGISTER YOUR INTEREST</div>
+                             <form id="contactForm1" class="form-input-container">
+                               <input type="text" id="name1" placeholder="Name" required>
+                               <input type="email" id="email1" placeholder="Email" required>
+                               <input type="tel" id="phone1" placeholder="Mobile No" required>
+                             
+                               <div class="consent">
+                                 <input type="checkbox" id="consent1" required>
+                                 <label for="consent">Authorize the team to contact me. This will override the registry with DNC / NDNC. I agree to</label>
+                               </div>
+                             
+                               <button type="submit" class="submit-btn">Submit</button>
+                             </form>
+                             
+                             <!-- Message area -->
+                             <p id="statusMsg1" style="margin-top:10px; color: green;"></p>
+
+                           </div>
     </div>
    
   </section>
@@ -250,7 +274,7 @@
 
 
   <!-- image gallery  -->
-  <section class="image-gallery">
+  <section class="image-gallery" id="GALLERY">
     <h3 class="sub-heading" >Gallery</h3>
     <div class="gallery-container">
       <div class="carousel">
@@ -291,25 +315,35 @@
 
 
       <div class="form-container1">
-        <input type="text" placeholder="Name*" />
+        <!-- <input type="text" placeholder="Name*" />
         <input type="email" placeholder="Email*" />
         <input type="tel" placeholder="Mobile*" />
 
         <div class="check-box">
           <label>
               <input type="checkbox" />
-              Authorize the team to contact me. This will override the registry with DNC / NDNC. I agree to <a href="#">Privacy Policy</a>.
+              Authorize the team to contact me. This will override the registry with DNC / NDNC. 
             </label>
-        </div>
+        </div> -->
 
-        <button type="submit">Submit</button>
+
+        <form id="contactForm2" class="form-contaier">
+              <input type="text" id="name2" placeholder="First Name" required />
+              <input type="email" id="email2" placeholder="Email" required />
+              <input type="tel" id="phone2" placeholder="Mobile" required />
+            
+              <button type="submit"><span>✈</span> SUBMIT</button>
+              <p id="statusMsg2" style="margin-top:10px; color: green;"></p>
+            </form>
+
+        <!-- <button type="submit">Submit</button> -->
       </div>
 
 
   
 
 <!-- table section -->
-<section class="price-section">
+<section class="price-section" id="FLOOR">
   <h3 class="sub-heading">Smart World Sector 113 Floor Plan</h3>
   <p class="para1">The floor plan gives detailed structure of the property that helps you imagine your life at Smart World. The floor plan guarantees to provide a stunning living experience for you. The detailed floor plan provides detailed configurations. You can check our residential project’s brochure for Smart World One DXP on the site.</p>
   <div class="price-table-wrapper">
@@ -347,7 +381,7 @@
 
       <!-- image animatin section -->
 
-      <section>
+      <section id="amenities">
         <h3 class="sub-heading">PROJECT AMENITIES</h3>
 
         <div class="amenities-grid">
@@ -407,22 +441,23 @@
 <button id="enquiryBtn" class="enquiry-button">Enquiry</button>
 
 <!-- Slide-in Modal Form -->
-<div id="contactForm1" class="contact-form-modal">
+<div id="contactForm5" class="contact-form-modal">
   <div class="form-header2">
     <h3>GET IN TOUCH</h3>
     <p>Please fill the details to get in touch</p>
     <span id="closeForm" class="close-btn">&times;</span>
   </div>
-  <form>
-    <input type="text" placeholder="Name*" required>
-    <input type="email" placeholder="Email*" required>
-    <input type="tel" placeholder="Mobile*" required>
+  <form id="contactForm6" >
+    <input type="text" id="name5" placeholder="Name*" required>
+    <input type="email" id="email5" placeholder="Email*" required>
+    <input type="tel" id="phone5" placeholder="Mobile*" required>
     <label class="checkbox">
-      <input type="checkbox" required checked>
+      <input type="checkbox" id="consent5" required checked>
       Authorize the team to contact me.
       <small>This will override the registry with DNC / NDNC. I agree to <a href="#">Privacy Policy</a>.</small>
     </label>
     <button type="submit" class="submit-btn">Submit</button>
+     <p id="statusMsg5" style="margin-top:10px; color: green;"></p>
   </form>
 </div>
 
@@ -432,7 +467,7 @@
 
        <!-- location -->
        
-    <section>
+    <section id="LOCATION">
       <section class="key-highlights">
           <h3 class="sub-heading">Location and Connectivity</h3>
           <p class="para1">Smart World Gurugram is strategically located in Sector 113 near, Dwarka Expressway offers proximity to major schools and banks. It offers great views..</p>
@@ -459,7 +494,7 @@
 
 
     <!-- about smart -->
-    <section class="about-smart">
+    <section class="about-smart" id="ABOUTUS">
       <h3 class="sub-heading1">About Smart World</h3>
        <div class="about-content">
            <p class="about-para">You can live a grand life at Smart world Gurgaon by learning about the fine details of the project. The brochure discloses granular details about the size and the facilities offered at Smart World  new launch The brochure for the residential project can be downloaded from the website for granular information.</p>
@@ -477,15 +512,15 @@
           <h3 class="gettouch-form-title">GET IN TOUCH</h3>
           <p class="gettouch-form-description">Please fill the details to get in touch</p>
       
-          <form id="gettouch-form" class="gettouch-form">
-            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
+          <form id="contactForm7"  class="gettouch-form">
+            <!-- <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" /> -->
       
-            <input type="text" name="name" placeholder="Name*" required />
-            <input type="email" name="email" placeholder="Email*" required />
-            <input type="tel" name="mobile" placeholder="Mobile*" required />
+            <input type="text" id="name7"  placeholder="Name*" required />
+            <input type="email" id="email7"  placeholder="Email*" required />
+            <input type="tel" id="phone7"  placeholder="Mobile*" required />
       
             <div class="gettouch-checkbox-container">
-              <input type="checkbox" name="consent" required />
+              <input type="checkbox" id="consent7" name="consent" required />
               <label>
                 Authorize the team to contact me. This will override the registry with DNC / NDNC. I agree to
                 <a href="#" target="_blank">Privacy Policy</a>.
@@ -494,7 +529,7 @@
       
             <button class="gettouch-submit-btn" type="submit">Submit</button>
       
-            <p id="gettouch-message" class="gettouch-message"></p>
+             <p id="statusMsg7" style="margin-top:10px; color: green;"></p>
           </form>
       
           <div class="gettouch-contact-buttons">
@@ -590,20 +625,32 @@
         <div id="myModal" class="modal">
           <div class="modal-content">
             <span class="close">&times;</span>
-            <form id="interestForm" class="highlight-form">
-              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-            
-              <div class="form-header">REGISTER YOUR INTEREST</div>
-            
-              <input type="text" name="first_name" placeholder="First Name" required />
-              <input type="email" name="email" placeholder="Email" required />
-              <input type="tel" name="mobile" placeholder="Mobile" required />
+            <form id="contactForm2" class="highlight-form">
+              <input type="text" id="name2" placeholder="First Name" required />
+              <input type="email" id="email2" placeholder="Email" required />
+              <input type="tel" id="phone2" placeholder="Mobile" required />
             
               <button type="submit"><span>✈</span> SUBMIT</button>
-            
-              <!-- Success/Error message display -->
-              <p id="formMessage" style="margin-top: 10px;"></p>
+              <p id="statusMsg2" style="margin-top:10px; color: green;"></p>
             </form>
+
+
+                       <!-- <div class="form-container3">
+                             <form id="contactForm1" class="form-input-container">
+                               <input type="text" id="name1" placeholder="Name" required>
+                               <input type="email" id="email1" placeholder="Email" required>
+                               <input type="tel" id="phone1" placeholder="Mobile No" required>
+                             
+                               <div class="consent">
+                                 <input type="checkbox" id="consent1" required>
+                                 <label for="consent">Authorize the team to contact me. This will override the registry with DNC / NDNC. I agree to</label>
+                               </div>
+                             
+                               <button type="submit" class="submit-btn">Submit</button>
+                             </form>
+                             <p id="statusMsg1" style="margin-top:10px; color: green;"></p>
+
+                           </div> -->
             
 
           </div>
@@ -618,18 +665,13 @@
           <div class="modal-content">
             <span class="close">&times;</span>
       
-            <form id="interestForm" class="highlight-form">
-              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
-      
-              <div class="form-header">REGISTER YOUR INTEREST</div>
-      
-              <input type="text" name="first_name" placeholder="First Name" required />
-              <input type="email" name="email" placeholder="Email" required />
-              <input type="tel" name="mobile" placeholder="Mobile" required />
-      
+            <form id="contactForm3" class="highlight-form">
+              <input type="text" id="name3" placeholder="First Name" required />
+              <input type="email" id="email3" placeholder="Email" required />
+              <input type="tel" id="phone3" placeholder="Mobile" required />
+            
               <button type="submit"><span>✈</span> SUBMIT</button>
-      
-              <p id="formMessage" style="margin-top: 10px;"></p>
+              <p id="statusMsg3" style="margin-top:10px; color: green;"></p>
             </form>
           </div>
         </div>
@@ -788,7 +830,330 @@
   </script>
 
 
+
+<!-- submit form handler -->
+<script>
+  document.getElementById("contactForm").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value;
+    const phone = document.getElementById("phone").value;
+    const email = document.getElementById("email").value;
+    const consent = document.getElementById("consent").checked;
+
+    const statusMsg = document.getElementById("statusMsg");
+    statusMsg.style.color = "blue";
+    statusMsg.innerText = "Submitting...";
+
+    const data = {
+      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+      name,
+      phone,
+      email,
+      consent: consent ? "Yes" : "No",
+    };
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+
+      if (result.success) {
+        statusMsg.style.color = "green";
+        statusMsg.innerText = "Form submitted successfully!";
+        document.getElementById("contactForm").reset();
+
+        // Auto-hide message after 5 seconds
+        setTimeout(() => {
+          statusMsg.innerText = "";
+        }, 5000);
+      } else {
+        statusMsg.style.color = "red";
+        statusMsg.innerText = "Submission failed. Try again.";
+      }
+    } catch (error) {
+      statusMsg.style.color = "red";
+      statusMsg.innerText = "An error occurred.";
+    }
+  });
+</script>
+
+
+<script>
+  document.getElementById("contactForm1").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name1").value;
+    const phone = document.getElementById("phone1").value;
+    const email = document.getElementById("email1").value;
+    const consent = document.getElementById("consent1").checked;
+
+    const statusMsg = document.getElementById("statusMsg1");
+    statusMsg.style.color = "blue";
+    statusMsg.innerText = "Submitting...";
+
+    const data = {
+      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+      name,
+      phone,
+      email,
+      consent: consent ? "Yes" : "No",
+    };
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+
+      if (result.success) {
+        statusMsg.style.color = "green";
+        statusMsg.innerText = "Form submitted successfully!";
+        document.getElementById("contactForm1").reset();
+
+        // Auto-hide message after 5 seconds
+        setTimeout(() => {
+          statusMsg.innerText = "";
+        }, 5000);
+      } else {
+        statusMsg.style.color = "red";
+        statusMsg.innerText = "Submission failed. Try again.";
+      }
+    } catch (error) {
+      statusMsg.style.color = "red";
+      statusMsg.innerText = "An error occurred.";
+    }
+  });
+</script>
+
+
+
+
+<script>
+  document.getElementById("contactForm2").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name2").value;
+    const phone = document.getElementById("phone2").value;
+    const email = document.getElementById("email2").value;
+    // const consent = document.getElementById("consent1").checked;
+
+    const statusMsg = document.getElementById("statusMsg2");
+    statusMsg.style.color = "blue";
+    statusMsg.innerText = "Submitting...";
+
+    const data = {
+      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+      name,
+      phone,
+      email,
+      // consent: consent ? "Yes" : "No",
+    };
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+
+      if (result.success) {
+        statusMsg.style.color = "green";
+        statusMsg.innerText = "Form submitted successfully!";
+        document.getElementById("contactForm2").reset();
+
+        // Auto-hide message after 5 seconds
+        setTimeout(() => {
+          statusMsg.innerText = "";
+        }, 5000);
+      } else {
+        statusMsg.style.color = "red";
+        statusMsg.innerText = "Submission failed. Try again.";
+      }
+    } catch (error) {
+      statusMsg.style.color = "red";
+      statusMsg.innerText = "An error occurred.";
+    }
+  });
+</script>
+
+
+
+<script>
+  document.getElementById("contactForm3").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name3").value;
+    const phone = document.getElementById("phone3").value;
+    const email = document.getElementById("email3").value;
+    // const consent = document.getElementById("consent1").checked;
+
+    const statusMsg = document.getElementById("statusMsg2");
+    statusMsg.style.color = "blue";
+    statusMsg.innerText = "Submitting...";
+
+    const data = {
+      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+      name,
+      phone,
+      email,
+      // consent: consent ? "Yes" : "No",
+    };
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+
+      if (result.success) {
+        statusMsg.style.color = "green";
+        statusMsg.innerText = "Form submitted successfully!";
+        document.getElementById("contactForm3").reset();
+
+        // Auto-hide message after 5 seconds
+        setTimeout(() => {
+          statusMsg.innerText = "";
+        }, 5000);
+      } else {
+        statusMsg.style.color = "red";
+        statusMsg.innerText = "Submission failed. Try again.";
+      }
+    } catch (error) {
+      statusMsg.style.color = "red";
+      statusMsg.innerText = "An error occurred.";
+    }
+  });
+</script>
   
+
+
+<script>
+  document.getElementById("contactForm6").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name5").value;
+    const phone = document.getElementById("phone5").value;
+    const email = document.getElementById("email5").value;
+    const consent = document.getElementById("consent5").checked;
+
+    const statusMsg = document.getElementById("statusMsg5");
+    statusMsg.style.color = "blue";
+    statusMsg.innerText = "Submitting...";
+
+    const data = {
+      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+      name,
+      phone,
+      email,
+      // consent: consent ? "Yes" : "No",
+    };
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+
+      if (result.success) {
+        statusMsg.style.color = "green";
+        statusMsg.innerText = "Form submitted successfully!";
+        document.getElementById("contactForm6").reset();
+
+        // Auto-hide message after 5 seconds
+        setTimeout(() => {
+          statusMsg.innerText = "";
+        }, 5000);
+      } else {
+        statusMsg.style.color = "red";
+        statusMsg.innerText = "Submission failed. Try again.";
+      }
+    } catch (error) {
+      statusMsg.style.color = "red";
+      statusMsg.innerText = "An error occurred.";
+    }
+  });
+</script>
+
+
+
+
+<script>
+  document.getElementById("contactForm7").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name7").value;
+    const phone = document.getElementById("phone7").value;
+    const email = document.getElementById("email7").value;
+    const consent = document.getElementById("consent7").checked;
+
+    const statusMsg = document.getElementById("statusMsg7");
+    statusMsg.style.color = "blue";
+    statusMsg.innerText = "Submitting...";
+
+    const data = {
+      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+      name,
+      phone,
+      email,
+      // consent: consent ? "Yes" : "No",
+    };
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+
+      if (result.success) {
+        statusMsg.style.color = "green";
+        statusMsg.innerText = "Form submitted successfully!";
+        document.getElementById("contactForm7").reset();
+
+        // Auto-hide message after 5 seconds
+        setTimeout(() => {
+          statusMsg.innerText = "";
+        }, 5000);
+      } else {
+        statusMsg.style.color = "red";
+        statusMsg.innerText = "Submission failed. Try again.";
+      }
+    } catch (error) {
+      statusMsg.style.color = "red";
+      statusMsg.innerText = "An error occurred.";
+    }
+  });
+</script>
 
     <script src="./index.js" defer></script>
 </body>
