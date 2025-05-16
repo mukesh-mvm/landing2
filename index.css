@@ -7,6 +7,7 @@ body{
   margin: 0px;
   padding-right: 0px;
   margin-right: 0px;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -272,6 +273,12 @@ body{
       margin: 0px;
       padding: 0px;
     } */
+
+    @media (max-width:768px) {
+         .form-container3{
+          width: 80%;
+         }
+    }
     
   
     .whatsapp{
@@ -737,6 +744,10 @@ body{
       }
   
       @media (max-width: 768px) {
+
+        .card-main-container{
+          margin-left: 10px;
+        }
         .info-card {
           width: 45%;
         }
@@ -1017,6 +1028,10 @@ body{
       }
   
       @media (max-width: 768px) {
+
+        .helight-section-main{
+          margin-left: 10px;
+        }
         .highlight-section {
           flex-direction: column;
           align-items: center;
@@ -1141,6 +1156,10 @@ body{
         h2::after {
           right: calc(50% - 90px);
         }
+
+        .amenity-card{
+          width: 100px;
+        }
       }
 
 
@@ -1258,6 +1277,11 @@ body{
       }
       
       @media (max-width: 600px) {
+
+        .price-section{
+          margin-left: 10px;
+        }
+
         .price-table th,
         .price-table td {
           padding: 12px 8px;
@@ -1499,6 +1523,16 @@ body{
   margin: auto;
 }
 
+@media (max-width:768px) {
+
+  .about-smart{
+    margin-left: 10px;
+
+    margin-bottom: 30px;
+  }
+  
+}
+
 
 /* get in touch */
 .gettouch-container {
@@ -1611,6 +1645,7 @@ body{
 @media (max-width: 768px) {
   .gettouch-container {
     flex-direction: column;
+    margin-left: 10px;
   }
 
   .gettouch-form-section {
