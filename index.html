@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./index.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
 
 
-   <!-- navbar -->
-   <nav class="navbar">
+  <!-- navbar -->
+  <nav class="navbar">
     <div class="logo">
       <!-- <strong>EXPERION</strong>
       <span>100% FDI REAL ESTATE DEVELOPER</span> -->
-      <img src="./public/smartworld logo.png" alt="logo" >
+      <img src="./public/smartworld logo.png" alt="logo">
       <!-- <span>Authorised Channel Partner</span>  -->
     </div>
 
@@ -29,13 +33,13 @@
       <a href="#LOCATION">LOCATION</a>
       <a href="#FLOOR">FLOOR PLAN</a>
       <a href="#ABOUTUS">ABOUT US</a>
-      
 
-      
-      
+
+
+
     </div>
 
-    
+
 
     <div class="hamburger" id="hamburger">
       <div></div>
@@ -44,11 +48,11 @@
     </div>
   </nav>
 
-    <!-- hero section -->
-    <section id="hero-section">
-        <div class="hero-container">
-              <div class="hero-content">
-                     <!-- <div class="hero-left-content">
+  <!-- hero section -->
+  <section id="hero-section">
+    <div class="hero-container">
+      <div class="hero-content">
+        <!-- <div class="hero-left-content">
                           <p class="hero-left-content-subheading">3 & 4 BHK Luxury Apartments</p>
                           <h1 class="hero-left-content-heading">Experion The Trillion </h1>
                           <p>Sector 48 Gurgaon </p>
@@ -67,122 +71,127 @@
 
 
                      </div> -->
-                     <div class="hero-form">
+        <div class="hero-form">
 
-                         <div class="form-container">
-                            
-                             
-                         
-                             <form id="contactForm" class="form-input-container">
-                               <input type="text" id="name" placeholder="Name" required>
-                               <input type="email" id="email" placeholder="Email" required>
-                               <input type="tel" id="phone" placeholder="Mobile No" required>
-                             
-                               <div class="consent">
-                                 <input type="checkbox" id="consent" required>
-                                 <label for="consent">Authorize the team to contact me. This will override the registry with DNC / NDNC. I agree to</label>
-                               </div>
-                             
-                               <button type="submit" class="submit-btn">Submit</button>
-                             </form>
-                             
-                             <!-- Message area -->
-                             <p id="statusMsg" style="margin-top:10px; color: green;"></p>
+          <div class="form-container">
 
-                           </div>
-                     </div>
+
+
+            <form id="contactForm" class="form-input-container">
+              <input type="text" id="name" placeholder="Name" required>
+              <input type="email" id="email" placeholder="Email" required>
+              <input type="tel" id="phone" placeholder="Mobile No" required>
+
+              <div class="consent">
+                <input type="checkbox" id="consent" required>
+                <label for="consent">Authorize the team to contact me. This will override the registry with DNC / NDNC.
+                  I agree to</label>
               </div>
-        </div>
-   </section>
 
+              <button type="submit" class="submit-btn">Submit</button>
+            </form>
 
-   <!-- trilion life section -->
-  <section id="overview">
-      <div class="container-website">
-          <div class="trillion-container">
-              <div class="trillion-left-box">
-                <div class="custom-slider-wrapper">
-                    <div class="custom-slider-track" id="customSliderTrack">
-                      <div class="custom-slider-item">
-                        <img src="./public//gallery-1.jpg" alt="Slide 1">
-                      </div>
-                      <div class="custom-slider-item">
-                        <img src="./public//gallery-2.jpg" alt="Slide 2">
-                      </div>
-                      <div class="custom-slider-item">
-                        <img src="./public//gallery-2.jpg" alt="Slide 3">
-                      </div>
-                    </div>
-                  
-                    <button class="nav-btn prev" onclick="prevSlide()">❮</button>
-                    <button class="nav-btn next" onclick="nextSlide()">❯</button>
-                  </div>
-              </div>
-              <div class="trillio-right-box" >
-                  <div class="trillio-right-box-form">
-                      <h4 class="heading-4">Booking Open</h4>
-                      <h3 class="heading-2">The Thrillion Life</h3>
-                      <p class="para">At Sector 48 Shohana road Gurgaon</p>
+            <!-- Message area -->
+            <p id="statusMsg" style="margin-top:10px; color: green;"></p>
 
-                      <div class="line-box"></div>
-
-                      <div class="trillion-button-group">
-                         <button>Ultra luxurious 3 & 4 BHK Appartment</button>
-                         <button>A luxurious Club house</button>
-                      </div>
-
-                      <h3 class="heading-3">Price On Request</h3>
-
-                      <button class="enqure-button" id="openModalBtn">Enquire Now</button>
-                  </div>
-                  <div class="trillio-right-box-content">
-                     <h3 class="heading-21">Smart World One DXP : Gurgaon’s Newest Launch</h3>
-                      <p class="para">Smart World Sector 113 is a newly Launched, residential project in India’s favourite corporate hub, Gurgaon. This residential project offers a stunning luxury living experience. Located in Sector 113  near the real estate favourite, Dwarka Expressway. The smart world Gurgaon project is the prime choice among buyers and investors. Smart world new launch new launch project offers great features and amenities and is built around greenery that gives great views.</p>
-                    </div>
-              </div>
-              
           </div>
+        </div>
       </div>
-  </section> 
+    </div>
+  </section>
 
 
-   <!-- helight section -->
-   <section  class="helight-section-main" id="CONFIGRATION">
+  <!-- trilion life section -->
+  <section id="overview">
+    <div class="container-website">
+      <div class="trillion-container">
+        <div class="trillion-left-box">
+          <div class="custom-slider-wrapper">
+            <div class="custom-slider-track" id="customSliderTrack">
+              <div class="custom-slider-item">
+                <img src="./public//gallery-1.jpg" alt="Slide 1">
+              </div>
+              <div class="custom-slider-item">
+                <img src="./public//gallery-2.jpg" alt="Slide 2">
+              </div>
+              <div class="custom-slider-item">
+                <img src="./public//gallery-2.jpg" alt="Slide 3">
+              </div>
+            </div>
+
+            <button class="nav-btn prev" onclick="prevSlide()">❮</button>
+            <button class="nav-btn next" onclick="nextSlide()">❯</button>
+          </div>
+        </div>
+        <div class="trillio-right-box">
+          <div class="trillio-right-box-form">
+            <h4 class="heading-4">Booking Open</h4>
+            <h3 class="heading-2">The Thrillion Life</h3>
+            <p class="para">At Sector 48 Shohana road Gurgaon</p>
+
+            <div class="line-box"></div>
+
+            <div class="trillion-button-group">
+              <button>Ultra luxurious 3 & 4 BHK Appartment</button>
+              <button>A luxurious Club house</button>
+            </div>
+
+            <h3 class="heading-3">Price On Request</h3>
+
+            <button class="enqure-button" id="openModalBtn">Enquire Now</button>
+          </div>
+          <div class="trillio-right-box-content">
+            <h3 class="heading-21">Smart World One DXP : Gurgaon’s Newest Launch</h3>
+            <p class="para">Smart World Sector 113 is a newly Launched, residential project in India’s favourite
+              corporate hub, Gurgaon. This residential project offers a stunning luxury living experience. Located in
+              Sector 113 near the real estate favourite, Dwarka Expressway. The smart world Gurgaon project is the prime
+              choice among buyers and investors. Smart world new launch new launch project offers great features and
+              amenities and is built around greenery that gives great views.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- helight section -->
+  <section class="helight-section-main" id="CONFIGRATION">
 
     <h3 class="sub-heading">PROJECT HIGHLIGHTS</h3>
     <div class="highlight-section">
-     
-        <div class="highlight-content">
-            
-            <div class="icons-grid">
-              <div class="icon-box">
-                <div class="icon-circle"><i class="fa-solid fa-person-walking"></i></div>
-                <p>24*7 Gymnasium</p>
-              </div>
-              <div class="icon-box">
-                <div class="icon-circle"><i class="fa-solid fa-leaf"></i></div>
-                <p>Overlooking central greens</p>
-              </div>
-              <div class="icon-box">
-                <div class="icon-circle"><i class="fa-solid fa-leaf"></i></div>
-                <p>Club zones for all age groups</p>
-              </div>
-              <div class="icon-box">
-                <div class="icon-circle"><i class="fa-solid fa-house-signal"></i></div>
-                <p>Facade design by UHA, London</p>
-              </div>
-              <div class="icon-box">
-                <div class="icon-circle"><i class="fa-brands fa-studiovinari"></i></div>
-                <p>Designed by Element Studio, Singapore</p>
-              </div>
-              <div class="icon-box">
-                <div class="icon-circle"><i class="fa-solid fa-shuttle-space"></i></div>
-                <p>24*7 Co-working space in Delhi-NCR</p>
-              </div>
-            </div>
+
+      <div class="highlight-content">
+
+        <div class="icons-grid">
+          <div class="icon-box">
+            <div class="icon-circle"><i class="fa-solid fa-person-walking"></i></div>
+            <p>24*7 Gymnasium</p>
           </div>
-        
-          <!-- <div class="highlight-form">
+          <div class="icon-box">
+            <div class="icon-circle"><i class="fa-solid fa-leaf"></i></div>
+            <p>Overlooking central greens</p>
+          </div>
+          <div class="icon-box">
+            <div class="icon-circle"><i class="fa-solid fa-leaf"></i></div>
+            <p>Club zones for all age groups</p>
+          </div>
+          <div class="icon-box">
+            <div class="icon-circle"><i class="fa-solid fa-house-signal"></i></div>
+            <p>Facade design by UHA, London</p>
+          </div>
+          <div class="icon-box">
+            <div class="icon-circle"><i class="fa-brands fa-studiovinari"></i></div>
+            <p>Designed by Element Studio, Singapore</p>
+          </div>
+          <div class="icon-box">
+            <div class="icon-circle"><i class="fa-solid fa-shuttle-space"></i></div>
+            <p>24*7 Co-working space in Delhi-NCR</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="highlight-form">
             <div class="form-header">REGISTER YOUR INTEREST</div>
             <input type="text" placeholder="First Name" required>
             <input type="email" placeholder="Email" required>
@@ -194,27 +203,28 @@
 
 
 
-           <div class="form-container3">
-                             <div class="form-header">REGISTER YOUR INTEREST</div>
-                             <form id="contactForm1" class="form-input-container">
-                               <input type="text" id="name1" placeholder="Name" required>
-                               <input type="email" id="email1" placeholder="Email" required>
-                               <input type="tel" id="phone1" placeholder="Mobile No" required>
-                             
-                               <div class="consent">
-                                 <input type="checkbox" id="consent1" required>
-                                 <label for="consent">Authorize the team to contact me. This will override the registry with DNC / NDNC. I agree to</label>
-                               </div>
-                             
-                               <button type="submit" class="submit-btn">Submit</button>
-                             </form>
-                             
-                             <!-- Message area -->
-                             <p id="statusMsg1" style="margin-top:10px; color: green;"></p>
+      <div class="form-container3">
+        <div class="form-header">REGISTER YOUR INTEREST</div>
+        <form id="contactForm1" class="form-input-container">
+          <input type="text" id="name1" placeholder="Name" required>
+          <input type="email" id="email1" placeholder="Email" required>
+          <input type="tel" id="phone1" placeholder="Mobile No" required>
 
-                           </div>
+          <div class="consent">
+            <input type="checkbox" id="consent1" required>
+            <label for="consent">Authorize the team to contact me. This will override the registry with DNC / NDNC. I
+              agree to</label>
+          </div>
+
+          <button type="submit" class="submit-btn">Submit</button>
+        </form>
+
+        <!-- Message area -->
+        <p id="statusMsg1" style="margin-top:10px; color: green;"></p>
+
+      </div>
     </div>
-   
+
   </section>
 
 
@@ -223,83 +233,104 @@
   <section>
 
     <div class="card-main-container">
-        <div class="card-container">
-            <div class="info-card">
-              <img src="./public/whats.png" alt="Call Icon" />
-              <h4 class="heading-6">Schedule a Call</h4>
-              <button>Click Here</button>
-            </div>
-            <div class="info-card">
-              <img src="./public/whatsapp-1.png" alt="WhatsApp Icon" />
-              <h4 class="heading-6">Whatsapp</h4>
-              <button>Click Here</button>
-            </div>
-            <div class="info-card">
-              <img src="./public/house-1.png" alt="Visit Icon" />
-              <h4 class="heading-6">Plan Site Visit</h4>
-              <button>Click Here</button>
-            </div>
-            <div class="info-card">
-              <img src="./public//brochure-1.png" alt="Brochure Icon" />
-              <h4 class="heading-6">Brochure</h4>
-              <button>Click Here</button>
-            </div>
-          </div>
+      <div class="card-container">
+        <div class="info-card">
+          <img src="./public/whats.png" alt="Call Icon" />
+          <h4 class="heading-6">Schedule a Call</h4>
+          <button><a href="tel:9990994222" style="
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      color: #ffffff;
+     
+      text-decoration: none;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: opacity 0.2s ease;
+      
+    " aria-label="Call (999) 099-4222" onmouseover="this.style.opacity='0.9'"
+              onmouseout="this.style.opacity='1'"><span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                  viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                  </path>
+                </svg></span>Call Us</a></button>
+        </div>
+        <div class="info-card">
+          <img src="./public/whatsapp-1.png" alt="WhatsApp Icon" />
+          <h4 class="heading-6">Whatsapp</h4>
+          <button><a href="https://alvo.chat/60UO" style=" color: white ; text-decoration: none;">Click Here</a></button>
+        </div>
+        <div class="info-card">
+          <img src="./public/house-1.png" alt="Visit Icon" />
+          <h4 class="heading-6">Plan Site Visit</h4>
+          <button> <a href="#getTouch" style="color: white; text-decoration: none;">Click Here</a></button>
+        </div>
+        <div class="info-card">
+          <img src="./public//brochure-1.png" alt="Brochure Icon" />
+          <h4 class="heading-6">Brochure</h4>
+          <button>Click Here</button>
+        </div>
+      </div>
     </div>
 
-   </section>
+  </section>
 
 
-    <!-- image faq -->
-    <section>
-      <section class="key-highlights">
-          <h3 class="sub-heading">Key Highlights</h3>
-          <div class="highlight-container">
-            <div class="highlight-image">
-              <img src="./public/smart-world-one-dxp-project-project-large-image1-6340.jpg" alt="Key Highlights Image" />
-            </div>
-            <div class="highlight-list">
-              <div class="highlight-item">▶ Lush green landscapes</div>
-              <div class="highlight-item">▶ 24x7 co working space( first time in NCR)</div>
-              <div class="highlight-item">▶ Gym availability is 24x7, with green views </div>
-              <div class="highlight-item">▶ Italian marble is used for flooring </div>
-              <div class="highlight-item">▶ Double glazing for saving energy </div>
-              <div class="highlight-item">▶ Completely modular kitchen with white wood </div>
-              <!-- <div class="highlight-item">▶ Aqua and terra amusement arena for kids </div> -->
-            </div>
-          </div>
-        </section>
-        
+  <!-- image faq -->
+  <section>
+    <section class="key-highlights">
+      <h3 class="sub-heading">Key Highlights</h3>
+      <div class="highlight-container">
+        <div class="highlight-image">
+          <img src="./public/smart-world-one-dxp-project-project-large-image1-6340.jpg" alt="Key Highlights Image" />
+        </div>
+        <div class="highlight-list">
+          <div class="highlight-item">▶ Lush green landscapes</div>
+          <div class="highlight-item">▶ 24x7 co working space( first time in NCR)</div>
+          <div class="highlight-item">▶ Gym availability is 24x7, with green views </div>
+          <div class="highlight-item">▶ Italian marble is used for flooring </div>
+          <div class="highlight-item">▶ Double glazing for saving energy </div>
+          <div class="highlight-item">▶ Completely modular kitchen with white wood </div>
+          <!-- <div class="highlight-item">▶ Aqua and terra amusement arena for kids </div> -->
+        </div>
+      </div>
     </section>
+
+  </section>
 
 
   <!-- image gallery  -->
   <section class="image-gallery" id="GALLERY">
-    <h3 class="sub-heading" >Gallery</h3>
+    <h3 class="sub-heading">Gallery</h3>
     <div class="gallery-container">
       <div class="carousel">
         <button class="carousel-btn left">❮</button>
         <div class="carousel-track">
-          <div class="carousel-slide slide11" ><img src="./public/gallery-1.jpg"  alt="Image 1" /></div>
+          <div class="carousel-slide slide11"><img src="./public/gallery-1.jpg" alt="Image 1" /></div>
           <div class="carousel-slide active"><img src="./public//gallery-2.jpg" alt="Image 2" /></div>
           <div class="carousel-slide slide11"><img src="./public/gallery-3.jpg" alt="Image 3" /></div>
         </div>
         <button class="carousel-btn right">❯</button>
       </div>
     </div>
-    
-    
+
+
   </section>
 
 
 
 
 
-      
 
 
-       <!-- image form section -->
-       <!-- <section class="section">
+
+  <!-- image form section -->
+  <!-- <section class="section">
         <h2>SmartWorld One Dxp Sector 113</h2>
         <p>Amazing amenities of SmartWorld One Dxp 113</p>
     
@@ -314,8 +345,8 @@
       </section> -->
 
 
-      <div class="form-container1">
-        <!-- <input type="text" placeholder="Name*" />
+  <div class="form-container1">
+    <!-- <input type="text" placeholder="Name*" />
         <input type="email" placeholder="Email*" />
         <input type="tel" placeholder="Mobile*" />
 
@@ -327,315 +358,321 @@
         </div> -->
 
 
-        <form id="contactForm2" class="form-contaier">
-              <input type="text" id="name2" placeholder="First Name" required />
-              <input type="email" id="email2" placeholder="Email" required />
-              <input type="tel" id="phone2" placeholder="Mobile" required />
-            
-              <button type="submit"><span>✈</span> SUBMIT</button>
-              <p id="statusMsg2" style="margin-top:10px; color: green;"></p>
-            </form>
+    <form id="contactForm2" class="form-contaier">
+      <input type="text" id="name2" placeholder="First Name" required />
+      <input type="email" id="email2" placeholder="Email" required />
+      <input type="tel" id="phone2" placeholder="Mobile" required />
 
-        <!-- <button type="submit">Submit</button> -->
-      </div>
+      <button type="submit"><span>✈</span> SUBMIT</button>
+      <p id="statusMsg2" style="margin-top:10px; color: green;"></p>
+    </form>
+
+    <!-- <button type="submit">Submit</button> -->
+  </div>
 
 
-  
 
-<!-- table section -->
-<section class="price-section" id="FLOOR">
-  <h3 class="sub-heading">Smart World Sector 113 Floor Plan</h3>
-  <p class="para1">The floor plan gives detailed structure of the property that helps you imagine your life at Smart World. The floor plan guarantees to provide a stunning living experience for you. The detailed floor plan provides detailed configurations. You can check our residential project’s brochure for Smart World One DXP on the site.</p>
-  <div class="price-table-wrapper">
-    <table class="price-table">
-      <thead>
-        <tr>
-          <th>Type</th>
-          <th>Size per square feet</th>
-          <th>Price ( in CR )</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>3.5 BHK independent </td>
-          <td>2450</td>
-          <td>4.40 onwards</td>
-        </tr>
-        <tr>
-          <td>4.5BHK independent </td>
-          <td>3080</td>
-          <td>5.5 onwards</td>
-        </tr>
-        <!-- <tr>
+
+  <!-- table section -->
+  <section class="price-section" id="FLOOR">
+    <h3 class="sub-heading">Smart World Sector 113 Floor Plan</h3>
+    <p class="para1">The floor plan gives detailed structure of the property that helps you imagine your life at Smart
+      World. The floor plan guarantees to provide a stunning living experience for you. The detailed floor plan provides
+      detailed configurations. You can check our residential project’s brochure for Smart World One DXP on the site.</p>
+    <div class="price-table-wrapper">
+      <table class="price-table">
+        <thead>
+          <tr>
+            <th>Type</th>
+            <th>Size per square feet</th>
+            <th>Price ( in CR )</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>3.5 BHK independent </td>
+            <td>2450</td>
+            <td>4.40 onwards</td>
+          </tr>
+          <tr>
+            <td>4.5BHK independent </td>
+            <td>3080</td>
+            <td>5.5 onwards</td>
+          </tr>
+          <!-- <tr>
           <td>4.5 BHK</td>
           <td>3006 sq ft</td>
           <td>Get Quote</td>
         </tr> -->
-      </tbody>
-    </table>
-  </div>
-</section>
-     
+        </tbody>
+      </table>
+    </div>
+  </section>
 
 
 
-      <!-- image animatin section -->
 
-      <section id="amenities">
-        <h3 class="sub-heading">PROJECT AMENITIES</h3>
+  <!-- image animatin section -->
 
-        <div class="amenities-grid">
-          <div class="amenity-card">
-            <div class="amenity-icon"><img src="./public/ani1.png"/></div>
-            <div class="amenity-title">Outdoor Sports Space</div>
-          </div>
-          <div class="amenity-card">
-            <div class="amenity-icon"><img src="./public//ani2.png"/></div>
-            <div class="amenity-title">Co-Working Space</div>
-          </div>
-          <div class="amenity-card">
-            <div class="amenity-icon"><img src="./public//ani3.png"/></div>
-            <div class="amenity-title">Kids Play Area</div>
-          </div>
-          <div class="amenity-card">
-            <div class="amenity-icon"><img src="./public//ani4.png"/></div>
-            <div class="amenity-title">Gymnasium</div>
-          </div>
-          <div class="amenity-card">
-            <div class="amenity-icon"><img src="./public/ani5.png"/></div>
-            <div class="amenity-title">Indoor Sports Space</div>
-          </div>
-          <div class="amenity-card">
-            <div class="amenity-icon"><img src="./public/ani6.png"/></div>
-            <div class="amenity-title">Senior Citizen Area</div>
-          </div>
-          <div class="amenity-card">
-            <div class="amenity-icon"><img src="./public/ani7.png"/></div>
-            <div class="amenity-title">Jogging Track</div>
-          </div>
-          <div class="amenity-card">
-            <div class="amenity-icon"><img src="./public/ani8.png"/></div>
-            <div class="amenity-title">Magnificent Entrance Lobby</div>
-          </div>
-          <div class="amenity-card">
-            <div class="amenity-icon"><img src="./public/ani9.png"/></div>
-            <div class="amenity-title">Party Lawn</div>
-          </div>
-          <div class="amenity-card">
-            <div class="amenity-icon"><img src="./public/ani10.png"/></div>
-            <div class="amenity-title">Luxurious Pool</div>
-          </div>
+  <section id="amenities">
+    <h3 class="sub-heading">PROJECT AMENITIES</h3>
+
+    <div class="amenities-grid">
+      <div class="amenity-card">
+        <div class="amenity-icon"><img src="./public/ani1.png" /></div>
+        <div class="amenity-title">Outdoor Sports Space</div>
+      </div>
+      <div class="amenity-card">
+        <div class="amenity-icon"><img src="./public//ani2.png" /></div>
+        <div class="amenity-title">Co-Working Space</div>
+      </div>
+      <div class="amenity-card">
+        <div class="amenity-icon"><img src="./public//ani3.png" /></div>
+        <div class="amenity-title">Kids Play Area</div>
+      </div>
+      <div class="amenity-card">
+        <div class="amenity-icon"><img src="./public//ani4.png" /></div>
+        <div class="amenity-title">Gymnasium</div>
+      </div>
+      <div class="amenity-card">
+        <div class="amenity-icon"><img src="./public/ani5.png" /></div>
+        <div class="amenity-title">Indoor Sports Space</div>
+      </div>
+      <div class="amenity-card">
+        <div class="amenity-icon"><img src="./public/ani6.png" /></div>
+        <div class="amenity-title">Senior Citizen Area</div>
+      </div>
+      <div class="amenity-card">
+        <div class="amenity-icon"><img src="./public/ani7.png" /></div>
+        <div class="amenity-title">Jogging Track</div>
+      </div>
+      <div class="amenity-card">
+        <div class="amenity-icon"><img src="./public/ani8.png" /></div>
+        <div class="amenity-title">Magnificent Entrance Lobby</div>
+      </div>
+      <div class="amenity-card">
+        <div class="amenity-icon"><img src="./public/ani9.png" /></div>
+        <div class="amenity-title">Party Lawn</div>
+      </div>
+      <div class="amenity-card">
+        <div class="amenity-icon"><img src="./public/ani10.png" /></div>
+        <div class="amenity-title">Luxurious Pool</div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+  <!-- enquire sectin -->
+  <section>
+    <!-- Sticky Enquiry Button -->
+    <button id="enquiryBtn" class="enquiry-button">Enquiry</button>
+
+    <!-- Slide-in Modal Form -->
+    <div id="contactForm5" class="contact-form-modal">
+      <div class="form-header2">
+        <h3>GET IN TOUCH</h3>
+        <p>Please fill the details to get in touch</p>
+        <span id="closeForm" class="close-btn">&times;</span>
+      </div>
+      <form id="contactForm6">
+        <input type="text" id="name5" placeholder="Name*" required>
+        <input type="email" id="email5" placeholder="Email*" required>
+        <input type="tel" id="phone5" placeholder="Mobile*" required>
+        <label class="checkbox">
+          <input type="checkbox" id="consent5" required checked>
+          Authorize the team to contact me.
+          <small>This will override the registry with DNC / NDNC. I agree to <a href="#">Privacy Policy</a>.</small>
+        </label>
+        <button type="submit" class="submit-btn">Submit</button>
+        <p id="statusMsg5" style="margin-top:10px; color: green;"></p>
+      </form>
+    </div>
+
+  </section>
+
+
+
+  <!-- location -->
+
+  <section id="LOCATION">
+    <section class="key-highlights">
+      <h3 class="sub-heading">Location and Connectivity</h3>
+      <p class="para1">Smart World Gurugram is strategically located in Sector 113 near, Dwarka Expressway offers
+        proximity to major schools and banks. It offers great views..</p>
+
+      <div class="highlight-container">
+        <div class="highlight-image">
+          <img src="./public/SMARTWORLD ONE DXP MAP.jpg" alt="Key Highlights Image" />
         </div>
-      </section>
-     
+        <div class="highlight-list">
+          <div class="highlight-item">▶ Dwarka Expressway is just 3.3 km</div>
+          <div class="highlight-item">▶ IGI airport is also nearby</div>
+          <div class="highlight-item">▶ 15 minutes to International sports complex</div>
+          <div class="highlight-item">▶ Gives access to north campus university, park hospital etc</div>
+          <div class="highlight-item">▶ Close to Dwarka Metro station </div>
+          <!-- <div class="highlight-item">▶ Completely modular kitchen with white wood </div> -->
+          <!-- <div class="highlight-item">▶ Aqua and terra amusement arena for kids </div> -->
+        </div>
+      </div>
+    </section>
 
-  
-      
-
-      
+  </section>
 
 
-      <!-- enquire sectin -->
-       <section>
-        <!-- Sticky Enquiry Button -->
-<button id="enquiryBtn" class="enquiry-button">Enquiry</button>
 
-<!-- Slide-in Modal Form -->
-<div id="contactForm5" class="contact-form-modal">
-  <div class="form-header2">
-    <h3>GET IN TOUCH</h3>
-    <p>Please fill the details to get in touch</p>
-    <span id="closeForm" class="close-btn">&times;</span>
+
+  <!-- about smart -->
+  <section class="about-smart" id="ABOUTUS">
+    <h3 class="sub-heading1">About Smart World</h3>
+    <div class="about-content">
+      <p class="about-para">You can live a grand life at Smart world Gurgaon by learning about the fine details of the
+        project. The brochure discloses granular details about the size and the facilities offered at Smart World new
+        launch The brochure for the residential project can be downloaded from the website for granular information.</p>
+    </div>
+  </section>
+
+
+  <!-- get in touch -->
+  <div class="gettouch-container" id="getTouch">
+    <div class="gettouch-image-section"></div>
+
+
+    <div class="getintouch-right">
+      <div class="gettouch-form-section">
+        <h3 class="gettouch-form-title">GET IN TOUCH</h3>
+        <p class="gettouch-form-description">Please fill the details to get in touch</p>
+
+        <form id="contactForm7" class="gettouch-form">
+          <!-- <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" /> -->
+
+          <input type="text" id="name7" placeholder="Name*" required />
+          <input type="email" id="email7" placeholder="Email*" required />
+          <input type="tel" id="phone7" placeholder="Mobile*" required />
+
+          <div class="gettouch-checkbox-container">
+            <input type="checkbox" id="consent7" name="consent" required />
+            <label>
+              Authorize the team to contact me. This will override the registry with DNC / NDNC. I agree to
+              <a href="#" target="_blank">Privacy Policy</a>.
+            </label>
+          </div>
+
+          <button class="gettouch-submit-btn" type="submit">Submit</button>
+
+          <p id="statusMsg7" style="margin-top:10px; color: green;"></p>
+        </form>
+
+        <div class="gettouch-contact-buttons">
+          <a href="tel:+919319890053">📞 +91-9990994222</a>
+          <a href="https://wa.me/919319890053" target="_blank">💬 +91-9990994222</a>
+        </div>
+      </div>
+    </div>
+
   </div>
-  <form id="contactForm6" >
-    <input type="text" id="name5" placeholder="Name*" required>
-    <input type="email" id="email5" placeholder="Email*" required>
-    <input type="tel" id="phone5" placeholder="Mobile*" required>
-    <label class="checkbox">
-      <input type="checkbox" id="consent5" required checked>
-      Authorize the team to contact me.
-      <small>This will override the registry with DNC / NDNC. I agree to <a href="#">Privacy Policy</a>.</small>
-    </label>
-    <button type="submit" class="submit-btn">Submit</button>
-     <p id="statusMsg5" style="margin-top:10px; color: green;"></p>
-  </form>
-</div>
-
-       </section>
 
 
+  <!-- footer -->
 
-       <!-- location -->
-       
-    <section id="LOCATION">
-      <section class="key-highlights">
-          <h3 class="sub-heading">Location and Connectivity</h3>
-          <p class="para1">Smart World Gurugram is strategically located in Sector 113 near, Dwarka Expressway offers proximity to major schools and banks. It offers great views..</p>
+  <section class="footer-container">
+    <footer class="gettouch-footer">
+      <div class="gettouch-footer-container">
+        <div class="gettouch-footer-col">
+          <h3>Details</h3>
+          <p>Sanjay Yadav RERA No -<br>
+            RC/HARERA/GGM/3142/2737/2025/19 Dated 08-Jan-2025</p>
+          <p>Address : PLOT NO-73, VATIKA INDIA NEXT, STREET J-1 BLOCK J, OPP TOWN SQUARE-I, SECTOR-83, GURUGRAM</p>
+          <p>BusinessAlligators Address: 1504, Reddu Patti, Kasan Road, Manesar, Gurugram, 122051</p>
+          <p>Smartworld ONE DXP RERA No:-<br>
+            RC/REP/HARERA/GGM/645/377/2022/120 | Dated: 13.12.2022</p>
+        </div>
 
-          <div class="highlight-container">
-            <div class="highlight-image">
-              <img src="./public/SMARTWORLD ONE DXP MAP.jpg" alt="Key Highlights Image" />
-            </div>
-            <div class="highlight-list">
-              <div class="highlight-item">▶ Dwarka Expressway is just 3.3 km</div>
-              <div class="highlight-item">▶ IGI airport is also nearby</div>
-              <div class="highlight-item">▶ 15 minutes to International sports complex</div>
-              <div class="highlight-item">▶ Gives access to north campus university, park hospital etc</div>
-              <div class="highlight-item">▶ Close to Dwarka Metro station </div>
-              <!-- <div class="highlight-item">▶ Completely modular kitchen with white wood </div> -->
-              <!-- <div class="highlight-item">▶ Aqua and terra amusement arena for kids </div> -->
-            </div>
-          </div>
-        </section>
-        
-    </section>
+        <div class="gettouch-footer-col">
+          <h3>Contact Number</h3>
+          <p>+91-9990994222</p>
+        </div>
 
-
-
-
-    <!-- about smart -->
-    <section class="about-smart" id="ABOUTUS">
-      <h3 class="sub-heading1">About Smart World</h3>
-       <div class="about-content">
-           <p class="about-para">You can live a grand life at Smart world Gurgaon by learning about the fine details of the project. The brochure discloses granular details about the size and the facilities offered at Smart World  new launch The brochure for the residential project can be downloaded from the website for granular information.</p>
-       </div>
-    </section>
-
-
-    <!-- get in touch -->
-    <div class="gettouch-container">
-      <div class="gettouch-image-section"></div>
-      
-
-      <div class="getintouch-right">
-        <div class="gettouch-form-section">
-          <h3 class="gettouch-form-title">GET IN TOUCH</h3>
-          <p class="gettouch-form-description">Please fill the details to get in touch</p>
-      
-          <form id="contactForm7"  class="gettouch-form">
-            <!-- <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" /> -->
-      
-            <input type="text" id="name7"  placeholder="Name*" required />
-            <input type="email" id="email7"  placeholder="Email*" required />
-            <input type="tel" id="phone7"  placeholder="Mobile*" required />
-      
-            <div class="gettouch-checkbox-container">
-              <input type="checkbox" id="consent7" name="consent" required />
-              <label>
-                Authorize the team to contact me. This will override the registry with DNC / NDNC. I agree to
-                <a href="#" target="_blank">Privacy Policy</a>.
-              </label>
-            </div>
-      
-            <button class="gettouch-submit-btn" type="submit">Submit</button>
-      
-             <p id="statusMsg7" style="margin-top:10px; color: green;"></p>
-          </form>
-      
-          <div class="gettouch-contact-buttons">
-            <a href="tel:+919319890053">📞 +91-9319890053</a>
-            <a href="https://wa.me/919319890053" target="_blank">💬 +91-9319890053</a>
-          </div>
+        <div class="gettouch-footer-col">
+          <h3>Other Links</h3>
+          <p><a href="#">Privacy Policy</a></p>
+          <p><a href="#">Disclaimer</a></p>
         </div>
       </div>
 
-    </div>
+      <div class="gettouch-footer-disclaimer">
+        <p>
+          Disclaimer:- This information provided about SmartWorldGurgaon.in is made available to our
+          interested customers for their general access. Please notice that we are not intentionally promoting
+          the project and/or services. The image and price used here are for reference purpose only. You are advised
+          to proceed with exhaustive research as the REREA no. provided is not verified.
+          Contact our executives to know more about the property. Please beware! The visitors and/or customers visiting
+          this site are barred from reproducing, selling, copying,reselling, or exploiting our site in any manner
 
 
-    <!-- footer -->
-
-    <section class="footer-container">
-      <footer class="gettouch-footer">
-        <div class="gettouch-footer-container">
-          <div class="gettouch-footer-col">
-            <h3>Details</h3>
-            <p>Sanjay Yadav RERA No -<br>
-              RC/HARERA/GGM/3142/2737/2025/19 Dated 08-Jan-2025</p>
-            <p>Address : PLOT NO-73, VATIKA INDIA NEXT, STREET J-1 BLOCK J, OPP TOWN SQUARE-I, SECTOR-83, GURUGRAM</p>
-            <p>BusinessAlligators Address: 1504, Reddu Patti, Kasan Road, Manesar, Gurugram, 122051</p>
-            <p>Smartworld ONE DXP RERA No:-<br>
-              RC/REP/HARERA/GGM/645/377/2022/120 | Dated: 13.12.2022</p>
-          </div>
-      
-          <div class="gettouch-footer-col">
-            <h3>Contact Number</h3>
-            <p>+91-9319890053</p>
-          </div>
-      
-          <div class="gettouch-footer-col">
-            <h3>Other Links</h3>
-            <p><a href="#">Privacy Policy</a></p>
-            <p><a href="#">Disclaimer</a></p>
-          </div>
-        </div>
-      
-        <div class="gettouch-footer-disclaimer">
-          <p>
-            Disclaimer:- This information provided about SmartWorldGurgaon.in is made available to our
-            interested customers for their general access. Please notice that we are not intentionally promoting
-            the project and/or services. The image and price used here are for reference purpose only. You are advised
-            to proceed with exhaustive research as the REREA no. provided is not verified.
-            Contact our executives to know more about the property. Please beware! The visitors and/or customers visiting this site are barred from reproducing, selling, copying,reselling, or exploiting our site in any manner
-            
-            
-          </p>
-        </div>
-      </footer>
-    </section>
+        </p>
+      </div>
+    </footer>
+  </section>
 
 
 
-    <!-- get in touch form -->
-    <script>
-      document.getElementById("gettouch-form").addEventListener("submit", async function (e) {
-        e.preventDefault();
-    
-        const form = e.target;
-        const formData = new FormData(form);
-        const messageBox = document.getElementById("gettouch-message");
-    
-        try {
-          const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData,
-          });
-    
-          const result = await response.json();
-    
-          if (result.success) {
-            messageBox.textContent = "✅ Thank you! Your form was submitted successfully.";
-            messageBox.style.color = "green";
-            form.reset();
-          } else {
-            messageBox.textContent = "❌ Submission failed. Please try again.";
-            messageBox.style.color = "red";
-          }
-        } catch (error) {
-          messageBox.textContent = "⚠️ An error occurred. Please try again.";
+  <!-- get in touch form -->
+  <script>
+    document.getElementById("gettouch-form").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const formData = new FormData(form);
+      const messageBox = document.getElementById("gettouch-message");
+
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData,
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+          messageBox.textContent = "✅ Thank you! Your form was submitted successfully.";
+          messageBox.style.color = "green";
+          form.reset();
+        } else {
+          messageBox.textContent = "❌ Submission failed. Please try again.";
           messageBox.style.color = "red";
         }
-      });
-    </script>
-    
+      } catch (error) {
+        messageBox.textContent = "⚠️ An error occurred. Please try again.";
+        messageBox.style.color = "red";
+      }
+    });
+  </script>
 
 
 
-       <!-- modal -->
-       <section>
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <form id="contactForm2" class="highlight-form">
-              <input type="text" id="name2" placeholder="First Name" required />
-              <input type="email" id="email2" placeholder="Email" required />
-              <input type="tel" id="phone2" placeholder="Mobile" required />
-            
-              <button type="submit"><span>✈</span> SUBMIT</button>
-              <p id="statusMsg2" style="margin-top:10px; color: green;"></p>
-            </form>
+
+  <!-- modal -->
+  <section>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <form id="contactForm2" class="highlight-form">
+          <input type="text" id="name2" placeholder="First Name" required />
+          <input type="email" id="email2" placeholder="Email" required />
+          <input type="tel" id="phone2" placeholder="Mobile" required />
+
+          <button type="submit"><span>✈</span> SUBMIT</button>
+          <p id="statusMsg2" style="margin-top:10px; color: green;"></p>
+        </form>
 
 
-                       <!-- <div class="form-container3">
+        <!-- <div class="form-container3">
                              <form id="contactForm1" class="form-input-container">
                                <input type="text" id="name1" placeholder="Name" required>
                                <input type="email" id="email1" placeholder="Email" required>
@@ -651,178 +688,178 @@
                              <p id="statusMsg1" style="margin-top:10px; color: green;"></p>
 
                            </div> -->
-            
-
-          </div>
-        </div>
-          
-      </section>
 
 
-      <!-- automative popup -->
-      <section>
-        <div id="myModal" class="modal">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-      
-            <form id="contactForm3" class="highlight-form">
-              <input type="text" id="name3" placeholder="First Name" required />
-              <input type="email" id="email3" placeholder="Email" required />
-              <input type="tel" id="phone3" placeholder="Mobile" required />
-            
-              <button type="submit"><span>✈</span> SUBMIT</button>
-              <p id="statusMsg3" style="margin-top:10px; color: green;"></p>
-            </form>
-          </div>
-        </div>
-      </section>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- automative popup -->
+  <section>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+
+        <form id="contactForm3" class="highlight-form">
+          <input type="text" id="name3" placeholder="First Name" required />
+          <input type="email" id="email3" placeholder="Email" required />
+          <input type="tel" id="phone3" placeholder="Mobile" required />
+
+          <button type="submit"><span>✈</span> SUBMIT</button>
+          <p id="statusMsg3" style="margin-top:10px; color: green;"></p>
+        </form>
+      </div>
+    </div>
+  </section>
 
 
 
 
-      <!-- navbar -->
-       <script>
-        const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
-        const navItems = navLinks.querySelectorAll('a');
-      
-        hamburger.addEventListener('click', () => {
-          navLinks.classList.toggle('active');
-        });
-      
-        navItems.forEach(item => {
-          item.addEventListener('click', (e) => {
-            e.preventDefault();
-      
-            // Hide menu
-            navLinks.classList.remove('active');
-      
-            // Smooth scroll with 100px offset
-            const targetId = item.getAttribute('href').substring(1);
-            const targetElement = document.getElementById(targetId);
-      
-            if (targetElement) {
-              const offsetPosition = targetElement.offsetTop - 100;
-      
-              window.scrollTo({
-                top: offsetPosition,
-                behavior: 'smooth'
-              });
-            }
+  <!-- navbar -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    const navItems = navLinks.querySelectorAll('a');
+
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    navItems.forEach(item => {
+      item.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        // Hide menu
+        navLinks.classList.remove('active');
+
+        // Smooth scroll with 100px offset
+        const targetId = item.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+
+        if (targetElement) {
+          const offsetPosition = targetElement.offsetTop - 100;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
           });
+        }
+      });
+    });
+  </script>
+
+  <!-- automatic modal -->
+  <script>
+    // Auto open modal after 3 seconds
+    window.onload = function () {
+      setTimeout(() => {
+        document.getElementById("myModal").style.display = "block";
+      }, 5000);
+    };
+
+    // Close modal when clicking the X
+    document.querySelector(".close").onclick = function () {
+      document.getElementById("myModal").style.display = "none";
+    };
+
+    // Close modal when clicking outside
+    window.onclick = function (event) {
+      const modal = document.getElementById("myModal");
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    };
+
+    // Handle form submission via Web3Forms
+    document.getElementById("interestForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const formData = new FormData(form);
+      const messageBox = document.getElementById("formMessage");
+
+      try {
+        const response = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          body: formData
         });
-      </script>
 
-      <!-- automatic modal -->
-      <script>
-        // Auto open modal after 3 seconds
-        window.onload = function () {
-          setTimeout(() => {
-            document.getElementById("myModal").style.display = "block";
-          }, 5000);
-        };
-      
-        // Close modal when clicking the X
-        document.querySelector(".close").onclick = function () {
-          document.getElementById("myModal").style.display = "none";
-        };
-      
-        // Close modal when clicking outside
-        window.onclick = function (event) {
-          const modal = document.getElementById("myModal");
-          if (event.target === modal) {
-            modal.style.display = "none";
-          }
-        };
-      
-        // Handle form submission via Web3Forms
-        document.getElementById("interestForm").addEventListener("submit", async function (e) {
-          e.preventDefault();
-      
-          const form = e.target;
-          const formData = new FormData(form);
-          const messageBox = document.getElementById("formMessage");
-      
-          try {
-            const response = await fetch("https://api.web3forms.com/submit", {
-              method: "POST",
-              body: formData
-            });
-      
-            const result = await response.json();
-      
-            if (result.success) {
-              messageBox.textContent = "✅ Thank you! Your form was submitted successfully.";
-              messageBox.style.color = "green";
-              form.reset();
-            } else {
-              messageBox.textContent = "❌ Submission failed. Please try again.";
-              messageBox.style.color = "red";
-            }
-          } catch (error) {
-            messageBox.textContent = "⚠️ An error occurred. Please try again later.";
-            messageBox.style.color = "red";
-          }
-        });
-      </script>
+        const result = await response.json();
 
-
-
-
-      <!-- modal -->
-
-      
-      
-
-
-      <script>
-        const track = document.querySelector('.carousel-track');
-        let slides = Array.from(track.children);
-        const leftBtn = document.querySelector('.carousel-btn.left');
-        const rightBtn = document.querySelector('.carousel-btn.right');
-    
-        function updateCarousel() {
-          slides.forEach(slide => slide.classList.remove('active'));
-          slides[1].classList.add('active');
-          track.innerHTML = '';
-          slides.forEach(slide => track.appendChild(slide));
+        if (result.success) {
+          messageBox.textContent = "✅ Thank you! Your form was submitted successfully.";
+          messageBox.style.color = "green";
+          form.reset();
+        } else {
+          messageBox.textContent = "❌ Submission failed. Please try again.";
+          messageBox.style.color = "red";
         }
-    
-        function moveLeft() {
-          const last = slides.pop();
-          slides.unshift(last);
-          updateCarousel();
-        }
-    
-        function moveRight() {
-          const first = slides.shift();
-          slides.push(first);
-          updateCarousel();
-        }
-    
-        leftBtn.addEventListener('click', moveLeft);
-        rightBtn.addEventListener('click', moveRight);
-    
-        // setInterval(moveRight, 5000);
-        updateCarousel();
-      </script>
+      } catch (error) {
+        messageBox.textContent = "⚠️ An error occurred. Please try again later.";
+        messageBox.style.color = "red";
+      }
+    });
+  </script>
 
 
 
-<script>
+
+  <!-- modal -->
+
+
+
+
+
+  <script>
+    const track = document.querySelector('.carousel-track');
+    let slides = Array.from(track.children);
+    const leftBtn = document.querySelector('.carousel-btn.left');
+    const rightBtn = document.querySelector('.carousel-btn.right');
+
+    function updateCarousel() {
+      slides.forEach(slide => slide.classList.remove('active'));
+      slides[1].classList.add('active');
+      track.innerHTML = '';
+      slides.forEach(slide => track.appendChild(slide));
+    }
+
+    function moveLeft() {
+      const last = slides.pop();
+      slides.unshift(last);
+      updateCarousel();
+    }
+
+    function moveRight() {
+      const first = slides.shift();
+      slides.push(first);
+      updateCarousel();
+    }
+
+    leftBtn.addEventListener('click', moveLeft);
+    rightBtn.addEventListener('click', moveRight);
+
+    // setInterval(moveRight, 5000);
+    updateCarousel();
+  </script>
+
+
+
+  <script>
     let currentIndex = 0;
     const items = document.querySelectorAll('.custom-slider-item');
     const track1 = document.getElementById('customSliderTrack');
-  
+
     function updateSlider() {
       track1.style.transform = `translateX(-${currentIndex * 100}%)`;
     }
-  
+
     function nextSlide() {
       currentIndex = (currentIndex + 1) % items.length;
       updateSlider();
     }
-  
+
     function prevSlide() {
       currentIndex = (currentIndex - 1 + items.length) % items.length;
       updateSlider();
@@ -831,330 +868,331 @@
 
 
 
-<!-- submit form handler -->
-<script>
-  document.getElementById("contactForm").addEventListener("submit", async function (e) {
-    e.preventDefault();
+  <!-- submit form handler -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", async function (e) {
+      e.preventDefault();
 
-    const name = document.getElementById("name").value;
-    const phone = document.getElementById("phone").value;
-    const email = document.getElementById("email").value;
-    const consent = document.getElementById("consent").checked;
+      const name = document.getElementById("name").value;
+      const phone = document.getElementById("phone").value;
+      const email = document.getElementById("email").value;
+      const consent = document.getElementById("consent").checked;
 
-    const statusMsg = document.getElementById("statusMsg");
-    statusMsg.style.color = "blue";
-    statusMsg.innerText = "Submitting...";
+      const statusMsg = document.getElementById("statusMsg");
+      statusMsg.style.color = "blue";
+      statusMsg.innerText = "Submitting...";
 
-    const data = {
-      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
-      name,
-      phone,
-      email,
-      consent: consent ? "Yes" : "No",
-    };
+      const data = {
+        access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+        name,
+        phone,
+        email,
+        consent: consent ? "Yes" : "No",
+      };
 
-    try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      });
+      try {
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
 
-      const result = await res.json();
+        const result = await res.json();
 
-      if (result.success) {
-        statusMsg.style.color = "green";
-        statusMsg.innerText = "Form submitted successfully!";
-        document.getElementById("contactForm").reset();
+        if (result.success) {
+          statusMsg.style.color = "green";
+          statusMsg.innerText = "Form submitted successfully!";
+          document.getElementById("contactForm").reset();
 
-        // Auto-hide message after 5 seconds
-        setTimeout(() => {
-          statusMsg.innerText = "";
-        }, 5000);
-      } else {
+          // Auto-hide message after 5 seconds
+          setTimeout(() => {
+            statusMsg.innerText = "";
+          }, 5000);
+        } else {
+          statusMsg.style.color = "red";
+          statusMsg.innerText = "Submission failed. Try again.";
+        }
+      } catch (error) {
         statusMsg.style.color = "red";
-        statusMsg.innerText = "Submission failed. Try again.";
+        statusMsg.innerText = "An error occurred.";
       }
-    } catch (error) {
-      statusMsg.style.color = "red";
-      statusMsg.innerText = "An error occurred.";
-    }
-  });
-</script>
+    });
+  </script>
 
 
-<script>
-  document.getElementById("contactForm1").addEventListener("submit", async function (e) {
-    e.preventDefault();
+  <script>
+    document.getElementById("contactForm1").addEventListener("submit", async function (e) {
+      e.preventDefault();
 
-    const name = document.getElementById("name1").value;
-    const phone = document.getElementById("phone1").value;
-    const email = document.getElementById("email1").value;
-    const consent = document.getElementById("consent1").checked;
+      const name = document.getElementById("name1").value;
+      const phone = document.getElementById("phone1").value;
+      const email = document.getElementById("email1").value;
+      const consent = document.getElementById("consent1").checked;
 
-    const statusMsg = document.getElementById("statusMsg1");
-    statusMsg.style.color = "blue";
-    statusMsg.innerText = "Submitting...";
+      const statusMsg = document.getElementById("statusMsg1");
+      statusMsg.style.color = "blue";
+      statusMsg.innerText = "Submitting...";
 
-    const data = {
-      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
-      name,
-      phone,
-      email,
-      consent: consent ? "Yes" : "No",
-    };
+      const data = {
+        access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+        name,
+        phone,
+        email,
+        consent: consent ? "Yes" : "No",
+      };
 
-    try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      });
+      try {
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
 
-      const result = await res.json();
+        const result = await res.json();
 
-      if (result.success) {
-        statusMsg.style.color = "green";
-        statusMsg.innerText = "Form submitted successfully!";
-        document.getElementById("contactForm1").reset();
+        if (result.success) {
+          statusMsg.style.color = "green";
+          statusMsg.innerText = "Form submitted successfully!";
+          document.getElementById("contactForm1").reset();
 
-        // Auto-hide message after 5 seconds
-        setTimeout(() => {
-          statusMsg.innerText = "";
-        }, 5000);
-      } else {
+          // Auto-hide message after 5 seconds
+          setTimeout(() => {
+            statusMsg.innerText = "";
+          }, 5000);
+        } else {
+          statusMsg.style.color = "red";
+          statusMsg.innerText = "Submission failed. Try again.";
+        }
+      } catch (error) {
         statusMsg.style.color = "red";
-        statusMsg.innerText = "Submission failed. Try again.";
+        statusMsg.innerText = "An error occurred.";
       }
-    } catch (error) {
-      statusMsg.style.color = "red";
-      statusMsg.innerText = "An error occurred.";
-    }
-  });
-</script>
+    });
+  </script>
 
 
 
 
-<script>
-  document.getElementById("contactForm2").addEventListener("submit", async function (e) {
-    e.preventDefault();
+  <script>
+    document.getElementById("contactForm2").addEventListener("submit", async function (e) {
+      e.preventDefault();
 
-    const name = document.getElementById("name2").value;
-    const phone = document.getElementById("phone2").value;
-    const email = document.getElementById("email2").value;
-    // const consent = document.getElementById("consent1").checked;
+      const name = document.getElementById("name2").value;
+      const phone = document.getElementById("phone2").value;
+      const email = document.getElementById("email2").value;
+      // const consent = document.getElementById("consent1").checked;
 
-    const statusMsg = document.getElementById("statusMsg2");
-    statusMsg.style.color = "blue";
-    statusMsg.innerText = "Submitting...";
+      const statusMsg = document.getElementById("statusMsg2");
+      statusMsg.style.color = "blue";
+      statusMsg.innerText = "Submitting...";
 
-    const data = {
-      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
-      name,
-      phone,
-      email,
-      // consent: consent ? "Yes" : "No",
-    };
+      const data = {
+        access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+        name,
+        phone,
+        email,
+        // consent: consent ? "Yes" : "No",
+      };
 
-    try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      });
+      try {
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
 
-      const result = await res.json();
+        const result = await res.json();
 
-      if (result.success) {
-        statusMsg.style.color = "green";
-        statusMsg.innerText = "Form submitted successfully!";
-        document.getElementById("contactForm2").reset();
+        if (result.success) {
+          statusMsg.style.color = "green";
+          statusMsg.innerText = "Form submitted successfully!";
+          document.getElementById("contactForm2").reset();
 
-        // Auto-hide message after 5 seconds
-        setTimeout(() => {
-          statusMsg.innerText = "";
-        }, 5000);
-      } else {
+          // Auto-hide message after 5 seconds
+          setTimeout(() => {
+            statusMsg.innerText = "";
+          }, 5000);
+        } else {
+          statusMsg.style.color = "red";
+          statusMsg.innerText = "Submission failed. Try again.";
+        }
+      } catch (error) {
         statusMsg.style.color = "red";
-        statusMsg.innerText = "Submission failed. Try again.";
+        statusMsg.innerText = "An error occurred.";
       }
-    } catch (error) {
-      statusMsg.style.color = "red";
-      statusMsg.innerText = "An error occurred.";
-    }
-  });
-</script>
+    });
+  </script>
 
 
 
-<script>
-  document.getElementById("contactForm3").addEventListener("submit", async function (e) {
-    e.preventDefault();
+  <script>
+    document.getElementById("contactForm3").addEventListener("submit", async function (e) {
+      e.preventDefault();
 
-    const name = document.getElementById("name3").value;
-    const phone = document.getElementById("phone3").value;
-    const email = document.getElementById("email3").value;
-    // const consent = document.getElementById("consent1").checked;
+      const name = document.getElementById("name3").value;
+      const phone = document.getElementById("phone3").value;
+      const email = document.getElementById("email3").value;
+      // const consent = document.getElementById("consent1").checked;
 
-    const statusMsg = document.getElementById("statusMsg2");
-    statusMsg.style.color = "blue";
-    statusMsg.innerText = "Submitting...";
+      const statusMsg = document.getElementById("statusMsg2");
+      statusMsg.style.color = "blue";
+      statusMsg.innerText = "Submitting...";
 
-    const data = {
-      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
-      name,
-      phone,
-      email,
-      // consent: consent ? "Yes" : "No",
-    };
+      const data = {
+        access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+        name,
+        phone,
+        email,
+        // consent: consent ? "Yes" : "No",
+      };
 
-    try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      });
+      try {
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
 
-      const result = await res.json();
+        const result = await res.json();
 
-      if (result.success) {
-        statusMsg.style.color = "green";
-        statusMsg.innerText = "Form submitted successfully!";
-        document.getElementById("contactForm3").reset();
+        if (result.success) {
+          statusMsg.style.color = "green";
+          statusMsg.innerText = "Form submitted successfully!";
+          document.getElementById("contactForm3").reset();
 
-        // Auto-hide message after 5 seconds
-        setTimeout(() => {
-          statusMsg.innerText = "";
-        }, 5000);
-      } else {
+          // Auto-hide message after 5 seconds
+          setTimeout(() => {
+            statusMsg.innerText = "";
+          }, 5000);
+        } else {
+          statusMsg.style.color = "red";
+          statusMsg.innerText = "Submission failed. Try again.";
+        }
+      } catch (error) {
         statusMsg.style.color = "red";
-        statusMsg.innerText = "Submission failed. Try again.";
+        statusMsg.innerText = "An error occurred.";
       }
-    } catch (error) {
-      statusMsg.style.color = "red";
-      statusMsg.innerText = "An error occurred.";
-    }
-  });
-</script>
-  
+    });
+  </script>
 
 
-<script>
-  document.getElementById("contactForm6").addEventListener("submit", async function (e) {
-    e.preventDefault();
 
-    const name = document.getElementById("name5").value;
-    const phone = document.getElementById("phone5").value;
-    const email = document.getElementById("email5").value;
-    const consent = document.getElementById("consent5").checked;
+  <script>
+    document.getElementById("contactForm6").addEventListener("submit", async function (e) {
+      e.preventDefault();
 
-    const statusMsg = document.getElementById("statusMsg5");
-    statusMsg.style.color = "blue";
-    statusMsg.innerText = "Submitting...";
+      const name = document.getElementById("name5").value;
+      const phone = document.getElementById("phone5").value;
+      const email = document.getElementById("email5").value;
+      const consent = document.getElementById("consent5").checked;
 
-    const data = {
-      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
-      name,
-      phone,
-      email,
-      // consent: consent ? "Yes" : "No",
-    };
+      const statusMsg = document.getElementById("statusMsg5");
+      statusMsg.style.color = "blue";
+      statusMsg.innerText = "Submitting...";
 
-    try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      });
+      const data = {
+        access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+        name,
+        phone,
+        email,
+        // consent: consent ? "Yes" : "No",
+      };
 
-      const result = await res.json();
+      try {
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
 
-      if (result.success) {
-        statusMsg.style.color = "green";
-        statusMsg.innerText = "Form submitted successfully!";
-        document.getElementById("contactForm6").reset();
+        const result = await res.json();
 
-        // Auto-hide message after 5 seconds
-        setTimeout(() => {
-          statusMsg.innerText = "";
-        }, 5000);
-      } else {
+        if (result.success) {
+          statusMsg.style.color = "green";
+          statusMsg.innerText = "Form submitted successfully!";
+          document.getElementById("contactForm6").reset();
+
+          // Auto-hide message after 5 seconds
+          setTimeout(() => {
+            statusMsg.innerText = "";
+          }, 5000);
+        } else {
+          statusMsg.style.color = "red";
+          statusMsg.innerText = "Submission failed. Try again.";
+        }
+      } catch (error) {
         statusMsg.style.color = "red";
-        statusMsg.innerText = "Submission failed. Try again.";
+        statusMsg.innerText = "An error occurred.";
       }
-    } catch (error) {
-      statusMsg.style.color = "red";
-      statusMsg.innerText = "An error occurred.";
-    }
-  });
-</script>
+    });
+  </script>
 
 
 
 
-<script>
-  document.getElementById("contactForm7").addEventListener("submit", async function (e) {
-    e.preventDefault();
+  <script>
+    document.getElementById("contactForm7").addEventListener("submit", async function (e) {
+      e.preventDefault();
 
-    const name = document.getElementById("name7").value;
-    const phone = document.getElementById("phone7").value;
-    const email = document.getElementById("email7").value;
-    const consent = document.getElementById("consent7").checked;
+      const name = document.getElementById("name7").value;
+      const phone = document.getElementById("phone7").value;
+      const email = document.getElementById("email7").value;
+      const consent = document.getElementById("consent7").checked;
 
-    const statusMsg = document.getElementById("statusMsg7");
-    statusMsg.style.color = "blue";
-    statusMsg.innerText = "Submitting...";
+      const statusMsg = document.getElementById("statusMsg7");
+      statusMsg.style.color = "blue";
+      statusMsg.innerText = "Submitting...";
 
-    const data = {
-      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
-      name,
-      phone,
-      email,
-      // consent: consent ? "Yes" : "No",
-    };
+      const data = {
+        access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+        name,
+        phone,
+        email,
+        // consent: consent ? "Yes" : "No",
+      };
 
-    try {
-      const res = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(data)
-      });
+      try {
+        const res = await fetch("https://api.web3forms.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(data)
+        });
 
-      const result = await res.json();
+        const result = await res.json();
 
-      if (result.success) {
-        statusMsg.style.color = "green";
-        statusMsg.innerText = "Form submitted successfully!";
-        document.getElementById("contactForm7").reset();
+        if (result.success) {
+          statusMsg.style.color = "green";
+          statusMsg.innerText = "Form submitted successfully!";
+          document.getElementById("contactForm7").reset();
 
-        // Auto-hide message after 5 seconds
-        setTimeout(() => {
-          statusMsg.innerText = "";
-        }, 5000);
-      } else {
+          // Auto-hide message after 5 seconds
+          setTimeout(() => {
+            statusMsg.innerText = "";
+          }, 5000);
+        } else {
+          statusMsg.style.color = "red";
+          statusMsg.innerText = "Submission failed. Try again.";
+        }
+      } catch (error) {
         statusMsg.style.color = "red";
-        statusMsg.innerText = "Submission failed. Try again.";
+        statusMsg.innerText = "An error occurred.";
       }
-    } catch (error) {
-      statusMsg.style.color = "red";
-      statusMsg.innerText = "An error occurred.";
-    }
-  });
-</script>
+    });
+  </script>
 
-    <script src="./index.js" defer></script>
+  <script src="./index.js" defer></script>
 </body>
+
 </html>

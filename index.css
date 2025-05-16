@@ -1,6 +1,14 @@
 
 
 /*  */
+
+body{
+  padding: 0px;
+  margin: 0px;
+  padding-right: 0px;
+  margin-right: 0px;
+}
+
 .navbar {
   position: fixed;
   top: 0;
@@ -74,7 +82,7 @@
 .hamburger div {
   width: 25px;
   height: 3px;
-  background-color: #333;
+  background-color: white;
 }
 
 @media (max-width: 768px) {
@@ -90,9 +98,10 @@
     justify-content: space-between;
     gap: 0px;
     align-items: center;
-    padding: 15px 30px;
+    /* padding: 15px 30px; */
+    padding-right: 20px;
     border-bottom: 1px solid #ccc;
-    background-color: #fff;
+    /* background-color: #fff; */
   }
 
   .nav-links {
@@ -142,6 +151,7 @@
     position: relative;
     padding: 80px;
     padding-right: 100px;
+    /* width: 100%; */
    
   }
 
@@ -338,19 +348,33 @@
     }
    
     
+
+    .highlight-image img {
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+  }
+
+  .highlight-image img:hover {
+    transform: scale(1.2); /* Adjust zoom level here */
+    cursor: zoom-out;
+  }
   
   
     @media (max-width:768px) {
   
   
       .hero-container{
-          height: auto;
-          padding: 10px;
+          /* height: auto; */
+          /* width: 100%; */
+          right: 0px;
+          height: 20vh;
           padding-top: 100px;
+          margin-left: 20px;
         }
   
   
       .hero-content{
+        width: 100%;
           width: 100%;
          flex-direction: column;
           
@@ -364,7 +388,8 @@
       }
       
       .hero-form{
-          width: 100%;
+          /* width: 100%; */
+          display: none;
           
          
       }
@@ -1005,6 +1030,10 @@
         .highlight-content h2 {
           font-size: 24px;
         }
+
+        .icons-grid{
+          gap: 0px;
+        }
       }
 
 
@@ -1438,6 +1467,16 @@
   color: #000;
 }
 
+
+@media (max-width:768px) {
+  .modal-content{
+    width: 260px;
+  }
+
+  .highlight-form{
+    width: 230px;
+  }
+}
 
 
 /* about smart */
