@@ -1738,3 +1738,64 @@ body{
 .fa-leaf-maple{
   color: white !important;
 }
+
+
+
+/* thanks page */
+
+.thanku-contaier{
+  height: 100vh;
+  background-color: #1e5c5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.thank-content-contianer{
+  max-width: 400px;
+  background-color: white;
+  height: 400px;
+  border-radius: 10px;
+  padding: 20px;
+  padding-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+
+.content-thank{
+  border: 2px solid red;
+  border-radius: 10px;
+  padding: 10px;
+  
+}
+
+.content-thank h1{
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+.content-thank p{
+  font-size: 20px;
+  color: black;
+}
+
+
+.content-thank h4{
+  font-size: 25px;
+  font-weight: bold;
+}
+
+@media (max-width:768px) {
+  .thanku-contaier{
+  height: 70vh;
+  background-color: #1e5c5c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+}
