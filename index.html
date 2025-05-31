@@ -10,10 +10,33 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HEPSBRBZEH"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HEPSBRBZEH');
+</script>
+
+
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PC9WXJJ3');</script>
+<!-- End Google Tag Manager -->
 </head>
 
 <body>
 
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PC9WXJJ3"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
   <!-- navbar -->
   <nav class="navbar">
@@ -346,17 +369,6 @@
 
 
   <div class="form-container1">
-    <!-- <input type="text" placeholder="Name*" />
-        <input type="email" placeholder="Email*" />
-        <input type="tel" placeholder="Mobile*" />
-
-        <div class="check-box">
-          <label>
-              <input type="checkbox" />
-              Authorize the team to contact me. This will override the registry with DNC / NDNC. 
-            </label>
-        </div> -->
-
 
     <form id="contactForm2" class="form-contaier">
       <input type="text" id="name2" placeholder="First Name" required />
@@ -366,8 +378,6 @@
       <button type="submit"><span>✈</span> SUBMIT</button>
       <p id="statusMsg2" style="margin-top:10px; color: green;"></p>
     </form>
-
-    <!-- <button type="submit">Submit</button> -->
   </div>
 
 
@@ -666,33 +676,14 @@
     <div id="myModal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <form id="contactForm2" class="highlight-form">
-          <input type="text" id="name2" placeholder="First Name" required />
-          <input type="email" id="email2" placeholder="Email" required />
-          <input type="tel" id="phone2" placeholder="Mobile" required />
+        <form id="contactForm8" class="highlight-form">
+          <input type="text" id="name8" placeholder="First Name" required />
+          <input type="email" id="email8" placeholder="Email" required />
+          <input type="tel" id="phone8" placeholder="Mobile" required />
 
           <button type="submit"><span>✈</span> SUBMIT</button>
-          <p id="statusMsg2" style="margin-top:10px; color: green;"></p>
+          <p id="statusMsg8" style="margin-top:10px; color: green;"></p>
         </form>
-
-
-        <!-- <div class="form-container3">
-                             <form id="contactForm1" class="form-input-container">
-                               <input type="text" id="name1" placeholder="Name" required>
-                               <input type="email" id="email1" placeholder="Email" required>
-                               <input type="tel" id="phone1" placeholder="Mobile No" required>
-                             
-                               <div class="consent">
-                                 <input type="checkbox" id="consent1" required>
-                                 <label for="consent">Authorize the team to contact me. This will override the registry with DNC / NDNC. I agree to</label>
-                               </div>
-                             
-                               <button type="submit" class="submit-btn">Submit</button>
-                             </form>
-                             <p id="statusMsg1" style="margin-top:10px; color: green;"></p>
-
-                           </div> -->
-
 
       </div>
     </div>
@@ -798,7 +789,7 @@
           form.reset();
 
           setTimeout(() => {
-    window.location.href = "./index2.html";
+    window.location.href = "./thank-you.html";
   }, 1000); // Wait 1 second before redirecting
 
 
@@ -922,7 +913,7 @@
           }, 5000);
 
           setTimeout(() => {
-    window.location.href = "./index2.html";
+    window.location.href = "./thank-you.html";
   }, 1000); // Wait 1 second before redirecting
 
 
@@ -982,7 +973,7 @@
 
 
           setTimeout(() => {
-    window.location.href = "./index2.html";
+    window.location.href = "./thank-you.html";
   }, 1000); // Wait 1 second before redirecting
         } else {
           statusMsg.style.color = "red";
@@ -998,62 +989,104 @@
 
 
 
-  <script>
-    document.getElementById("contactForm2").addEventListener("submit", async function (e) {
-      e.preventDefault();
+<script>
+  document.getElementById("contactForm2").addEventListener("submit", async function (e) {
+    e.preventDefault();
 
-      const name = document.getElementById("name2").value;
-      const phone = document.getElementById("phone2").value;
-      const email = document.getElementById("email2").value;
-      // const consent = document.getElementById("consent1").checked;
+    const name = document.getElementById("name2").value;
+    const phone = document.getElementById("phone2").value;
+    const email = document.getElementById("email2").value;
+    const statusMsg = document.getElementById("statusMsg2");
 
-      const statusMsg = document.getElementById("statusMsg2");
-      statusMsg.style.color = "blue";
-      statusMsg.innerText = "Submitting...";
+    statusMsg.style.color = "blue";
+    statusMsg.innerText = "Submitting...";
 
-      const data = {
-        access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
-        name,
-        phone,
-        email,
-        // consent: consent ? "Yes" : "No",
-      };
+    const data = {
+      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+      name,
+      phone,
+      email
+    };
 
-      try {
-        const res = await fetch("https://api.web3forms.com/submit", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json"
-          },
-          body: JSON.stringify(data)
-        });
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
 
-        const result = await res.json();
+      const result = await res.json();
 
-        if (result.success) {
-          statusMsg.style.color = "green";
-          statusMsg.innerText = "Form submitted successfully!";
-          document.getElementById("contactForm2").reset();
+      if (result.success) {
+        statusMsg.style.color = "green";
+        statusMsg.innerText = "Form submitted successfully!";
+        document.getElementById("contactForm2").reset();
 
-          // Auto-hide message after 5 seconds
-          setTimeout(() => {
-            statusMsg.innerText = "";
-          }, 5000);
+        // Redirect to thank you page after short delay
+        setTimeout(() => {
+          window.location.href = "./thank-you.html";
+        }, 1000);
 
-
-          setTimeout(() => {
-    window.location.href = "./index2.html";
-  }, 1000); // Wait 1 second before redirecting
-        } else {
-          statusMsg.style.color = "red";
-          statusMsg.innerText = "Submission failed. Try again.";
-        }
-      } catch (error) {
+      } else {
         statusMsg.style.color = "red";
-        statusMsg.innerText = "An error occurred.";
+        statusMsg.innerText = "Submission failed. Please try again.";
       }
-    });
-  </script>
+    } catch (error) {
+      statusMsg.style.color = "red";
+      statusMsg.innerText = "An error occurred. Please try again later.";
+    }
+  });
+</script>
+
+<script>
+  document.getElementById("contactForm8").addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name8").value;
+    const phone = document.getElementById("phone8").value;
+    const email = document.getElementById("email8").value;
+    const statusMsg = document.getElementById("statusMsg8");
+
+    statusMsg.style.color = "blue";
+    statusMsg.innerText = "Submitting...";
+
+    const data = {
+      access_key: "052cbbeb-9f6a-4af6-9152-ff7e1605c0f3",
+      name,
+      phone,
+      email
+    };
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data)
+      });
+
+      const result = await res.json();
+
+      if (result.success) {
+        statusMsg.style.color = "green";
+        statusMsg.innerText = "Form submitted successfully!";
+        document.getElementById("contactForm8").reset();
+
+        // Redirect to thank you page after short delay
+        setTimeout(() => {
+          window.location.href = "./thank-you.html";
+        }, 1000);
+        
+      } else {
+        statusMsg.style.color = "red";
+        statusMsg.innerText = "Submission failed. Please try again.";
+      }
+    } catch (error) {
+      statusMsg.style.color = "red";
+      statusMsg.innerText = "An error occurred. Please try again later.";
+    }
+  });
+</script>
+
 
 
 
@@ -1101,8 +1134,9 @@
 
 
           setTimeout(() => {
-    window.location.href = "./index2.html";
+    window.location.href = "./thank-you.html";
   }, 1000); // Wait 1 second before redirecting
+
         } else {
           statusMsg.style.color = "red";
           statusMsg.innerText = "Submission failed. Try again.";
@@ -1159,7 +1193,7 @@
           }, 5000);
 
           setTimeout(() => {
-    window.location.href = "./index2.html";
+    window.location.href = "./thank-you.html";
   }, 1000); // Wait 1 second before redirecting
         } else {
           statusMsg.style.color = "red";
@@ -1219,7 +1253,7 @@
 
 
           setTimeout(() => {
-    window.location.href = "./index2.html";
+    window.location.href = "./thank-you.html";
   }, 1000); // Wait 1 second before redirecting
         } else {
           statusMsg.style.color = "red";
